@@ -1,38 +1,36 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(home: Home()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("My First Flutter App"),
-          centerTitle: true,
-          backgroundColor: Colors.red[400],
-        ),
-        body: const Center(
-          child: Text(
-            "Hola Amigos, Meku!",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.0,
-              color: Colors.red,
-              fontFamily: "DeliciousHandrawn",
-            ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("My First Flutter App"),
+        centerTitle: true,
+        backgroundColor: Colors.red[400],
+      ),
+      body: Center(
+        child: Text(
+          "Hola Amigo, Meku!",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.0,
+            color: Colors.red[400],
+            fontFamily: "DeliciousHandrawn",
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.red[600],
-          child: const Text("+"),
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.red[600],
+        child: const Text("+"),
       ),
     );
   }
