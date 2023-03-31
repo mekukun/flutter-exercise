@@ -17,15 +17,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[400],
       ),
       body: Center(
-        child: Text(
-          "Hola Amigo, Meku!",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            letterSpacing: 1.0,
-            color: Colors.red[400],
-            fontFamily: "DeliciousHandrawn",
-          ),
-        ),
+        // Image.network("assets/gf.jpg")
+        child: Image.asset("assets/gf.jpg"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
