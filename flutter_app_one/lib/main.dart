@@ -16,12 +16,13 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[400],
       ),
-      body: const Center(
+      body: Center(
           // Image.network("assets/gf.jpg")
-          child: Icon(
-        Icons.add_home_work_rounded,
-        color: Colors.red,
-        size: 100,
+          child: ElevatedButton(
+        onPressed: () {},
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
+        child: const Text("click me"),
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
