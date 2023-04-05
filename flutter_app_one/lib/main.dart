@@ -20,11 +20,11 @@ class Home extends StatelessWidget {
       ),
       body: Center(
           // Image.network("assets/gf.jpg")
-          child: ElevatedButton.icon(
-        onPressed: () {},
-        icon: const Icon(Icons.access_time_filled_rounded),
-        label: const Text("Hi"),
-      )),
+          child: IconButton(
+              onPressed: () {
+                print("u clicked me lol");
+              },
+              icon: const Icon(Icons.accessibility_new_sharp))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red[600],
