@@ -18,11 +18,14 @@ class Home extends StatelessWidget {
       ),
       body: Center(
           // Image.network("assets/gf.jpg")
-          child: ElevatedButton(
+          child: TextButton(
         onPressed: () {},
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
-        child: const Text("click me"),
+        child: const Text(
+          "click me",
+          style: TextStyle(color: Colors.white),
+        ),
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
