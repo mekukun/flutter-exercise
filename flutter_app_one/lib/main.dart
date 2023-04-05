@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,14 +20,10 @@ class Home extends StatelessWidget {
       ),
       body: Center(
           // Image.network("assets/gf.jpg")
-          child: TextButton(
+          child: ElevatedButton.icon(
         onPressed: () {},
-        style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
-        child: const Text(
-          "click me",
-          style: TextStyle(color: Colors.white),
-        ),
+        icon: const Icon(Icons.access_time_filled_rounded),
+        label: const Text("Hi"),
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
