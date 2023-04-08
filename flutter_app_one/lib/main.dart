@@ -18,13 +18,12 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[400],
       ),
-      body: Center(
-          // Image.network("assets/gf.jpg")
-          child: IconButton(
-              onPressed: () {
-                print("u clicked me lol");
-              },
-              icon: const Icon(Icons.accessibility_new_sharp))),
+      body: Container(
+        color: Colors.grey,
+        padding: const EdgeInsets.fromLTRB(10, 10, 20, 20),
+        margin: const EdgeInsets.all(10),
+        child: const Text("Hello"),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red[600],
